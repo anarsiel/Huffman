@@ -25,16 +25,27 @@ int main(int argc, char **argv) {
 
     if (strcmp(argv[1], "-e") == 0) {
         encoder e = encoder(argv[2], argv[3]);
-        e.encode();
+        try {
+            e.encode();
+        } catch (...) {
+            std::cout << "Error: File not found";
+        }
     } else if (strcmp(argv[1], "-d") == 0) {
-        decoder d = decoder(argv[2], argv[3]);
-        d.decode();
+        try {
+            decoder d = decoder(argv[2], argv[3]);
+            d.decode();
+        } catch (...) {
+            std::cout << "Error";
+        }
     } else if (strcmp(argv[1], "-r") == 0) {
-        {encoder e = encoder(argv[2], "../utility/buffer.buf");
-        e.encode();}
-
-        {decoder d = decoder("../utility/buffer.buf", argv[3]);
-        d.decode();}
+        try {
+            {encoder e = encoder(argv[2], "../utility/buffer.buf");
+                e.encode();}
+            {decoder d = decoder("../utility/buffer.buf", argv[3]);
+                d.decode();}
+        } catch (...) {
+            std::cout << "Error";
+        }
     } else {
         throw std::runtime_error("wrong key:" + documentation);
     }
