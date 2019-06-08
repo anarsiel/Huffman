@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/admin/Documents/own-projects/huffamn
+CMAKE_SOURCE_DIR = "/Users/admin/Documents/University/#GitHub/cpp/huffman/huffman"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/admin/Documents/own-projects/huffamn/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/admin/Documents/University/#GitHub/cpp/huffman/huffman/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/admin/Documents/own-projects/huffamn/cmake-build-debug/CMakeFiles /Users/admin/Documents/own-projects/huffamn/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/admin/Documents/University/#GitHub/cpp/huffman/huffman/cmake-build-debug/CMakeFiles" "/Users/admin/Documents/University/#GitHub/cpp/huffman/huffman/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/admin/Documents/own-projects/huffamn/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/admin/Documents/University/#GitHub/cpp/huffman/huffman/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -111,152 +111,124 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lib
+# Target rules for targets named Huffman_Tool
 
 # Build rule for target.
-lib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lib
-.PHONY : lib
+Huffman_Tool: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Huffman_Tool
+.PHONY : Huffman_Tool
 
 # fast build rule for target.
-lib/fast:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/build
-.PHONY : lib/fast
+Huffman_Tool/fast:
+	$(MAKE) -f CMakeFiles/Huffman_Tool.dir/build.make CMakeFiles/Huffman_Tool.dir/build
+.PHONY : Huffman_Tool/fast
 
-sources/decoder.o: sources/decoder.cpp.o
+#=============================================================================
+# Target rules for targets named Huffman_Library
 
-.PHONY : sources/decoder.o
+# Build rule for target.
+Huffman_Library: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Huffman_Library
+.PHONY : Huffman_Library
 
-# target to build an object file
-sources/decoder.cpp.o:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/sources/decoder.cpp.o
-.PHONY : sources/decoder.cpp.o
+# fast build rule for target.
+Huffman_Library/fast:
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/build
+.PHONY : Huffman_Library/fast
 
-sources/decoder.i: sources/decoder.cpp.i
+#=============================================================================
+# Target rules for targets named Huffman_Test
 
-.PHONY : sources/decoder.i
+# Build rule for target.
+Huffman_Test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Huffman_Test
+.PHONY : Huffman_Test
 
-# target to preprocess a source file
-sources/decoder.cpp.i:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/sources/decoder.cpp.i
-.PHONY : sources/decoder.cpp.i
+# fast build rule for target.
+Huffman_Test/fast:
+	$(MAKE) -f CMakeFiles/Huffman_Test.dir/build.make CMakeFiles/Huffman_Test.dir/build
+.PHONY : Huffman_Test/fast
 
-sources/decoder.s: sources/decoder.cpp.s
+lib/sources/decoder.o: lib/sources/decoder.cpp.o
 
-.PHONY : sources/decoder.s
-
-# target to generate assembly for a file
-sources/decoder.cpp.s:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/sources/decoder.cpp.s
-.PHONY : sources/decoder.cpp.s
-
-sources/encoder.o: sources/encoder.cpp.o
-
-.PHONY : sources/encoder.o
-
-# target to build an object file
-sources/encoder.cpp.o:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/sources/encoder.cpp.o
-.PHONY : sources/encoder.cpp.o
-
-sources/encoder.i: sources/encoder.cpp.i
-
-.PHONY : sources/encoder.i
-
-# target to preprocess a source file
-sources/encoder.cpp.i:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/sources/encoder.cpp.i
-.PHONY : sources/encoder.cpp.i
-
-sources/encoder.s: sources/encoder.cpp.s
-
-.PHONY : sources/encoder.s
-
-# target to generate assembly for a file
-sources/encoder.cpp.s:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/sources/encoder.cpp.s
-.PHONY : sources/encoder.cpp.s
-
-sources/huffman.o: sources/huffman.cpp.o
-
-.PHONY : sources/huffman.o
+.PHONY : lib/sources/decoder.o
 
 # target to build an object file
-sources/huffman.cpp.o:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/sources/huffman.cpp.o
-.PHONY : sources/huffman.cpp.o
+lib/sources/decoder.cpp.o:
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/lib/sources/decoder.cpp.o
+.PHONY : lib/sources/decoder.cpp.o
 
-sources/huffman.i: sources/huffman.cpp.i
+lib/sources/decoder.i: lib/sources/decoder.cpp.i
 
-.PHONY : sources/huffman.i
+.PHONY : lib/sources/decoder.i
 
 # target to preprocess a source file
-sources/huffman.cpp.i:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/sources/huffman.cpp.i
-.PHONY : sources/huffman.cpp.i
+lib/sources/decoder.cpp.i:
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/lib/sources/decoder.cpp.i
+.PHONY : lib/sources/decoder.cpp.i
 
-sources/huffman.s: sources/huffman.cpp.s
+lib/sources/decoder.s: lib/sources/decoder.cpp.s
 
-.PHONY : sources/huffman.s
+.PHONY : lib/sources/decoder.s
 
 # target to generate assembly for a file
-sources/huffman.cpp.s:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/sources/huffman.cpp.s
-.PHONY : sources/huffman.cpp.s
+lib/sources/decoder.cpp.s:
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/lib/sources/decoder.cpp.s
+.PHONY : lib/sources/decoder.cpp.s
 
-sources/reader.o: sources/reader.cpp.o
+lib/sources/encoder.o: lib/sources/encoder.cpp.o
 
-.PHONY : sources/reader.o
+.PHONY : lib/sources/encoder.o
 
 # target to build an object file
-sources/reader.cpp.o:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/sources/reader.cpp.o
-.PHONY : sources/reader.cpp.o
+lib/sources/encoder.cpp.o:
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/lib/sources/encoder.cpp.o
+.PHONY : lib/sources/encoder.cpp.o
 
-sources/reader.i: sources/reader.cpp.i
+lib/sources/encoder.i: lib/sources/encoder.cpp.i
 
-.PHONY : sources/reader.i
+.PHONY : lib/sources/encoder.i
 
 # target to preprocess a source file
-sources/reader.cpp.i:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/sources/reader.cpp.i
-.PHONY : sources/reader.cpp.i
+lib/sources/encoder.cpp.i:
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/lib/sources/encoder.cpp.i
+.PHONY : lib/sources/encoder.cpp.i
 
-sources/reader.s: sources/reader.cpp.s
+lib/sources/encoder.s: lib/sources/encoder.cpp.s
 
-.PHONY : sources/reader.s
+.PHONY : lib/sources/encoder.s
 
 # target to generate assembly for a file
-sources/reader.cpp.s:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/sources/reader.cpp.s
-.PHONY : sources/reader.cpp.s
+lib/sources/encoder.cpp.s:
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/lib/sources/encoder.cpp.s
+.PHONY : lib/sources/encoder.cpp.s
 
-sources/writer.o: sources/writer.cpp.o
+lib/sources/huffman.o: lib/sources/huffman.cpp.o
 
-.PHONY : sources/writer.o
+.PHONY : lib/sources/huffman.o
 
 # target to build an object file
-sources/writer.cpp.o:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/sources/writer.cpp.o
-.PHONY : sources/writer.cpp.o
+lib/sources/huffman.cpp.o:
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/lib/sources/huffman.cpp.o
+.PHONY : lib/sources/huffman.cpp.o
 
-sources/writer.i: sources/writer.cpp.i
+lib/sources/huffman.i: lib/sources/huffman.cpp.i
 
-.PHONY : sources/writer.i
+.PHONY : lib/sources/huffman.i
 
 # target to preprocess a source file
-sources/writer.cpp.i:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/sources/writer.cpp.i
-.PHONY : sources/writer.cpp.i
+lib/sources/huffman.cpp.i:
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/lib/sources/huffman.cpp.i
+.PHONY : lib/sources/huffman.cpp.i
 
-sources/writer.s: sources/writer.cpp.s
+lib/sources/huffman.s: lib/sources/huffman.cpp.s
 
-.PHONY : sources/writer.s
+.PHONY : lib/sources/huffman.s
 
 # target to generate assembly for a file
-sources/writer.cpp.s:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/sources/writer.cpp.s
-.PHONY : sources/writer.cpp.s
+lib/sources/huffman.cpp.s:
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/lib/sources/huffman.cpp.s
+.PHONY : lib/sources/huffman.cpp.s
 
 tests/gtest/gtest-all.o: tests/gtest/gtest-all.cc.o
 
@@ -264,7 +236,7 @@ tests/gtest/gtest-all.o: tests/gtest/gtest-all.cc.o
 
 # target to build an object file
 tests/gtest/gtest-all.cc.o:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/tests/gtest/gtest-all.cc.o
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/tests/gtest/gtest-all.cc.o
 .PHONY : tests/gtest/gtest-all.cc.o
 
 tests/gtest/gtest-all.i: tests/gtest/gtest-all.cc.i
@@ -273,7 +245,7 @@ tests/gtest/gtest-all.i: tests/gtest/gtest-all.cc.i
 
 # target to preprocess a source file
 tests/gtest/gtest-all.cc.i:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/tests/gtest/gtest-all.cc.i
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/tests/gtest/gtest-all.cc.i
 .PHONY : tests/gtest/gtest-all.cc.i
 
 tests/gtest/gtest-all.s: tests/gtest/gtest-all.cc.s
@@ -282,7 +254,7 @@ tests/gtest/gtest-all.s: tests/gtest/gtest-all.cc.s
 
 # target to generate assembly for a file
 tests/gtest/gtest-all.cc.s:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/tests/gtest/gtest-all.cc.s
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/tests/gtest/gtest-all.cc.s
 .PHONY : tests/gtest/gtest-all.cc.s
 
 tests/gtest/gtest_main.o: tests/gtest/gtest_main.cc.o
@@ -291,7 +263,7 @@ tests/gtest/gtest_main.o: tests/gtest/gtest_main.cc.o
 
 # target to build an object file
 tests/gtest/gtest_main.cc.o:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/tests/gtest/gtest_main.cc.o
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/tests/gtest/gtest_main.cc.o
 .PHONY : tests/gtest/gtest_main.cc.o
 
 tests/gtest/gtest_main.i: tests/gtest/gtest_main.cc.i
@@ -300,7 +272,7 @@ tests/gtest/gtest_main.i: tests/gtest/gtest_main.cc.i
 
 # target to preprocess a source file
 tests/gtest/gtest_main.cc.i:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/tests/gtest/gtest_main.cc.i
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/tests/gtest/gtest_main.cc.i
 .PHONY : tests/gtest/gtest_main.cc.i
 
 tests/gtest/gtest_main.s: tests/gtest/gtest_main.cc.s
@@ -309,7 +281,7 @@ tests/gtest/gtest_main.s: tests/gtest/gtest_main.cc.s
 
 # target to generate assembly for a file
 tests/gtest/gtest_main.cc.s:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/tests/gtest/gtest_main.cc.s
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/tests/gtest/gtest_main.cc.s
 .PHONY : tests/gtest/gtest_main.cc.s
 
 tests/testing.o: tests/testing.cpp.o
@@ -318,7 +290,7 @@ tests/testing.o: tests/testing.cpp.o
 
 # target to build an object file
 tests/testing.cpp.o:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/tests/testing.cpp.o
+	$(MAKE) -f CMakeFiles/Huffman_Test.dir/build.make CMakeFiles/Huffman_Test.dir/tests/testing.cpp.o
 .PHONY : tests/testing.cpp.o
 
 tests/testing.i: tests/testing.cpp.i
@@ -327,7 +299,7 @@ tests/testing.i: tests/testing.cpp.i
 
 # target to preprocess a source file
 tests/testing.cpp.i:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/tests/testing.cpp.i
+	$(MAKE) -f CMakeFiles/Huffman_Test.dir/build.make CMakeFiles/Huffman_Test.dir/tests/testing.cpp.i
 .PHONY : tests/testing.cpp.i
 
 tests/testing.s: tests/testing.cpp.s
@@ -336,8 +308,89 @@ tests/testing.s: tests/testing.cpp.s
 
 # target to generate assembly for a file
 tests/testing.cpp.s:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/tests/testing.cpp.s
+	$(MAKE) -f CMakeFiles/Huffman_Test.dir/build.make CMakeFiles/Huffman_Test.dir/tests/testing.cpp.s
 .PHONY : tests/testing.cpp.s
+
+utility/sources/reader.o: utility/sources/reader.cpp.o
+
+.PHONY : utility/sources/reader.o
+
+# target to build an object file
+utility/sources/reader.cpp.o:
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/utility/sources/reader.cpp.o
+.PHONY : utility/sources/reader.cpp.o
+
+utility/sources/reader.i: utility/sources/reader.cpp.i
+
+.PHONY : utility/sources/reader.i
+
+# target to preprocess a source file
+utility/sources/reader.cpp.i:
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/utility/sources/reader.cpp.i
+.PHONY : utility/sources/reader.cpp.i
+
+utility/sources/reader.s: utility/sources/reader.cpp.s
+
+.PHONY : utility/sources/reader.s
+
+# target to generate assembly for a file
+utility/sources/reader.cpp.s:
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/utility/sources/reader.cpp.s
+.PHONY : utility/sources/reader.cpp.s
+
+utility/sources/writer.o: utility/sources/writer.cpp.o
+
+.PHONY : utility/sources/writer.o
+
+# target to build an object file
+utility/sources/writer.cpp.o:
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/utility/sources/writer.cpp.o
+.PHONY : utility/sources/writer.cpp.o
+
+utility/sources/writer.i: utility/sources/writer.cpp.i
+
+.PHONY : utility/sources/writer.i
+
+# target to preprocess a source file
+utility/sources/writer.cpp.i:
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/utility/sources/writer.cpp.i
+.PHONY : utility/sources/writer.cpp.i
+
+utility/sources/writer.s: utility/sources/writer.cpp.s
+
+.PHONY : utility/sources/writer.s
+
+# target to generate assembly for a file
+utility/sources/writer.cpp.s:
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/utility/sources/writer.cpp.s
+.PHONY : utility/sources/writer.cpp.s
+
+utility/tool.o: utility/tool.cpp.o
+
+.PHONY : utility/tool.o
+
+# target to build an object file
+utility/tool.cpp.o:
+	$(MAKE) -f CMakeFiles/Huffman_Tool.dir/build.make CMakeFiles/Huffman_Tool.dir/utility/tool.cpp.o
+.PHONY : utility/tool.cpp.o
+
+utility/tool.i: utility/tool.cpp.i
+
+.PHONY : utility/tool.i
+
+# target to preprocess a source file
+utility/tool.cpp.i:
+	$(MAKE) -f CMakeFiles/Huffman_Tool.dir/build.make CMakeFiles/Huffman_Tool.dir/utility/tool.cpp.i
+.PHONY : utility/tool.cpp.i
+
+utility/tool.s: utility/tool.cpp.s
+
+.PHONY : utility/tool.s
+
+# target to generate assembly for a file
+utility/tool.cpp.s:
+	$(MAKE) -f CMakeFiles/Huffman_Tool.dir/build.make CMakeFiles/Huffman_Tool.dir/utility/tool.cpp.s
+.PHONY : utility/tool.cpp.s
 
 # Help Target
 help:
@@ -347,22 +400,18 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... lib"
-	@echo "... sources/decoder.o"
-	@echo "... sources/decoder.i"
-	@echo "... sources/decoder.s"
-	@echo "... sources/encoder.o"
-	@echo "... sources/encoder.i"
-	@echo "... sources/encoder.s"
-	@echo "... sources/huffman.o"
-	@echo "... sources/huffman.i"
-	@echo "... sources/huffman.s"
-	@echo "... sources/reader.o"
-	@echo "... sources/reader.i"
-	@echo "... sources/reader.s"
-	@echo "... sources/writer.o"
-	@echo "... sources/writer.i"
-	@echo "... sources/writer.s"
+	@echo "... Huffman_Tool"
+	@echo "... Huffman_Library"
+	@echo "... Huffman_Test"
+	@echo "... lib/sources/decoder.o"
+	@echo "... lib/sources/decoder.i"
+	@echo "... lib/sources/decoder.s"
+	@echo "... lib/sources/encoder.o"
+	@echo "... lib/sources/encoder.i"
+	@echo "... lib/sources/encoder.s"
+	@echo "... lib/sources/huffman.o"
+	@echo "... lib/sources/huffman.i"
+	@echo "... lib/sources/huffman.s"
 	@echo "... tests/gtest/gtest-all.o"
 	@echo "... tests/gtest/gtest-all.i"
 	@echo "... tests/gtest/gtest-all.s"
@@ -372,6 +421,15 @@ help:
 	@echo "... tests/testing.o"
 	@echo "... tests/testing.i"
 	@echo "... tests/testing.s"
+	@echo "... utility/sources/reader.o"
+	@echo "... utility/sources/reader.i"
+	@echo "... utility/sources/reader.s"
+	@echo "... utility/sources/writer.o"
+	@echo "... utility/sources/writer.i"
+	@echo "... utility/sources/writer.s"
+	@echo "... utility/tool.o"
+	@echo "... utility/tool.i"
+	@echo "... utility/tool.s"
 .PHONY : help
 
 

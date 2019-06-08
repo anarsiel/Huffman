@@ -59,45 +59,119 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/admin/Documents/own-projects/huffamn
+CMAKE_SOURCE_DIR = "/Users/admin/Documents/University/#GitHub/cpp/huffman/huffman"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/admin/Documents/own-projects/huffamn/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/admin/Documents/University/#GitHub/cpp/huffman/huffman/cmake-build-debug"
 
 #=============================================================================
-# Target rules for target CMakeFiles/lib.dir
+# Target rules for target CMakeFiles/Huffman_Tool.dir
 
 # All Build rule for target.
-CMakeFiles/lib.dir/all:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/depend
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/admin/Documents/own-projects/huffamn/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target lib"
-.PHONY : CMakeFiles/lib.dir/all
+CMakeFiles/Huffman_Tool.dir/all: CMakeFiles/Huffman_Library.dir/all
+	$(MAKE) -f CMakeFiles/Huffman_Tool.dir/build.make CMakeFiles/Huffman_Tool.dir/depend
+	$(MAKE) -f CMakeFiles/Huffman_Tool.dir/build.make CMakeFiles/Huffman_Tool.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/admin/Documents/University/#GitHub/cpp/huffman/huffman/cmake-build-debug/CMakeFiles" --progress-num=11,12 "Built target Huffman_Tool"
+.PHONY : CMakeFiles/Huffman_Tool.dir/all
 
 # Include target in all.
-all: CMakeFiles/lib.dir/all
+all: CMakeFiles/Huffman_Tool.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/admin/Documents/own-projects/huffamn/cmake-build-debug/CMakeFiles 9
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/admin/Documents/own-projects/huffamn/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/lib.dir/rule
+CMakeFiles/Huffman_Tool.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/admin/Documents/University/#GitHub/cpp/huffman/huffman/cmake-build-debug/CMakeFiles" 10
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Huffman_Tool.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/admin/Documents/University/#GitHub/cpp/huffman/huffman/cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/Huffman_Tool.dir/rule
 
 # Convenience name for target.
-lib: CMakeFiles/lib.dir/rule
+Huffman_Tool: CMakeFiles/Huffman_Tool.dir/rule
 
-.PHONY : lib
-
-# clean rule for target.
-CMakeFiles/lib.dir/clean:
-	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/clean
-.PHONY : CMakeFiles/lib.dir/clean
+.PHONY : Huffman_Tool
 
 # clean rule for target.
-clean: CMakeFiles/lib.dir/clean
+CMakeFiles/Huffman_Tool.dir/clean:
+	$(MAKE) -f CMakeFiles/Huffman_Tool.dir/build.make CMakeFiles/Huffman_Tool.dir/clean
+.PHONY : CMakeFiles/Huffman_Tool.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Huffman_Tool.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Huffman_Library.dir
+
+# All Build rule for target.
+CMakeFiles/Huffman_Library.dir/all:
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/depend
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/admin/Documents/University/#GitHub/cpp/huffman/huffman/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8 "Built target Huffman_Library"
+.PHONY : CMakeFiles/Huffman_Library.dir/all
+
+# Include target in all.
+all: CMakeFiles/Huffman_Library.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Huffman_Library.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/admin/Documents/University/#GitHub/cpp/huffman/huffman/cmake-build-debug/CMakeFiles" 8
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Huffman_Library.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/admin/Documents/University/#GitHub/cpp/huffman/huffman/cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/Huffman_Library.dir/rule
+
+# Convenience name for target.
+Huffman_Library: CMakeFiles/Huffman_Library.dir/rule
+
+.PHONY : Huffman_Library
+
+# clean rule for target.
+CMakeFiles/Huffman_Library.dir/clean:
+	$(MAKE) -f CMakeFiles/Huffman_Library.dir/build.make CMakeFiles/Huffman_Library.dir/clean
+.PHONY : CMakeFiles/Huffman_Library.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Huffman_Library.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Huffman_Test.dir
+
+# All Build rule for target.
+CMakeFiles/Huffman_Test.dir/all: CMakeFiles/Huffman_Library.dir/all
+	$(MAKE) -f CMakeFiles/Huffman_Test.dir/build.make CMakeFiles/Huffman_Test.dir/depend
+	$(MAKE) -f CMakeFiles/Huffman_Test.dir/build.make CMakeFiles/Huffman_Test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/admin/Documents/University/#GitHub/cpp/huffman/huffman/cmake-build-debug/CMakeFiles" --progress-num=9,10 "Built target Huffman_Test"
+.PHONY : CMakeFiles/Huffman_Test.dir/all
+
+# Include target in all.
+all: CMakeFiles/Huffman_Test.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Huffman_Test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/admin/Documents/University/#GitHub/cpp/huffman/huffman/cmake-build-debug/CMakeFiles" 10
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Huffman_Test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/admin/Documents/University/#GitHub/cpp/huffman/huffman/cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/Huffman_Test.dir/rule
+
+# Convenience name for target.
+Huffman_Test: CMakeFiles/Huffman_Test.dir/rule
+
+.PHONY : Huffman_Test
+
+# clean rule for target.
+CMakeFiles/Huffman_Test.dir/clean:
+	$(MAKE) -f CMakeFiles/Huffman_Test.dir/build.make CMakeFiles/Huffman_Test.dir/clean
+.PHONY : CMakeFiles/Huffman_Test.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Huffman_Test.dir/clean
 
 .PHONY : clean
 
